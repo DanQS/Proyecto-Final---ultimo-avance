@@ -1,0 +1,70 @@
+﻿@import "bourbon";
+
+body {
+    background-color: darkslateblue;
+    font-family: Arial; 
+    font-size: 15px;
+    color: white;
+}
+
+style 
+.centrado {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.centrado-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+&::before {
+    left: 40%;
+    bottom: -130%;
+    background-color: rgba($blueQueen, 0.15);
+    include animation(wawes 6s infinite linear);
+}
+
+&::after {
+    left: 35%;
+    bottom: -125%;
+    background-color: rgba($greenSeaweed, 0.2);
+    include animation(wawes 7s infinite);
+}
+
+> input {
+    font-family: $Arial;
+    display: block;
+    border-radius: 5px;
+    font-size: 12px;
+    background: white;
+    width: 100%;
+    border: 0;
+    padding: 10px 10px;
+    margin: 15px -10px;
+}
+
+> button {
+    font-family: Arial;
+    font-weight: 100;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 80px;
+    border: 0;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-left: -5px;
+    border-radius: 5px;
+    background-color: darkslategray;
+    include transition(background-color 300ms);
+    &:hover
+
+{
+    background-color: rebeccapurple;
+}
+
